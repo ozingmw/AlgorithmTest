@@ -8,5 +8,4 @@ public class Ex1008 {
 		int b = scan.nextInt();
 		System.out.printf("%.10f", (double)a/b);
 	}
-
 }
