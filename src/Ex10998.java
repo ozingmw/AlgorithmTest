@@ -7,6 +7,7 @@ public class Ex10998 {
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		System.out.println(a*b);
+		
 	}
 
 }
