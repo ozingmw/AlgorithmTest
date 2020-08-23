@@ -15,9 +15,9 @@ public class Ex8958 {
 		}
 		
 		for(int x=0; x<n; x++) {
+			transArray[x] = new int[caseArray[x].length];
 			for(int y=0; y<caseArray[x].length; y++) {
-				System.out.println(caseArray[x][y]);
-				if(caseArray[x][y]=="O") {
+				if(caseArray[x][y].equals("O")) {
 					if(y==0)
 						transArray[x][y] = 1;
 					else
