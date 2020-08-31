@@ -9,16 +9,15 @@ public class Ex2839 {
 		int firstNum = num;
 		int stack = 0;
 
+		stack += num/5;
+		num %= 5;
+
 		while(num>0) {
-			stack += num/5;
-			num %= 5;
-			if(num==0)
-				break;
-			if(num==3) {
-				stack++;
-				break;
+			if(num%3==0) {
+				stack += num/3;
+				num %= 3;
 			}else {
-				if(firstNum >= num) {
+				if(firstNum > num) {
 					num += 5;
 					stack--;
 				}else {
@@ -27,7 +26,8 @@ public class Ex2839 {
 				}
 			}
 		}
-		
+
 		System.out.println(stack);
+
 	}
 }
