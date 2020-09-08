@@ -11,11 +11,21 @@ public class Ex2447 {
 		star = new String[num][num];
 		
 		re_star(num,0,0);
+		
+		for(int x=0; x<num; x++) {
+			for(int y=0; y<num; y++) {
+				if(star[x][y]!=null)
+					System.out.print(star[x][y]);
+				else
+					System.out.print(" ");
+			}
+			System.out.println("");
+		}
 	}
 	
 	private static void re_star(int num, int x, int y) {
-		if(num<=0) {
-			star[0][0] = "*";
+		if(num==1) {
+			star[x][y] = "*";
 			return;
 		}
 		
